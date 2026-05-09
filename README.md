@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# nobsqrcode
 
-## Getting Started
+no bs qr code generator. just works.
 
-First, run the development server:
+## features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **text/url to qr** — paste anything, get a scannable code
+- **customizable colors** — pick qr color and background
+- **size options** — slider from small to large (128px - 512px)
+- **error correction levels** — L/M/Q/H for different damage tolerance
+- **logo support** — upload an image to center of qr code
+- **dual downloads** — png and svg formats
+- **history** — saves your last 10 codes locally, click to reload
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## how to use
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. go to https://nobsqrcode.vercel.app/
+2. paste your text or url
+3. customize colors/size/logo if you want
+4. click generate
+5. download png or svg
+6. done
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## tips
 
-## Learn More
+- use **high error correction** if adding a logo (lets the code handle being partially covered)
+- logos work best as simple shapes with good contrast
+- svg downloads are scalable, png is fixed resolution
 
-To learn more about Next.js, take a look at the following resources:
+## tech stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- next.js
+- typescript  
+- tailwind css
+- qrcode library
+- vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+made with love ig❤️(and claude) in a sick yellow gradient
